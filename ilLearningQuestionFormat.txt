@@ -1,0 +1,7 @@
+When asking professor a question, follow the below format:
+
+1) Identify the problem
+2) Identify the cause of the problem
+3) Research and Identify credible sources that address the problem
+4) Identify possible solutions
+5) Implement the solution to solve the problem
