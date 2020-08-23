@@ -24,7 +24,18 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" 
     integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" 
     crossorigin="anonymous">
+<!-- 
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+ 
 
+    <style>
+      .navbar{
+        margin-bottom:0;
+        border-radius:0;
+      }
+
+    -->
+    </style>
     <!-- JS, Popper.js, and jQuery -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
@@ -32,6 +43,36 @@
 
     <!-- additional styling -->
     <style>    
+    #initial-background {
+        background-image: url(media/cliffs.jpg);
+        background-size: cover;
+        height: 600px;
+    }
+    
+    
+
+    
+    .intro {
+        color: lightgoldenrodyellow;       
+        margin: 10px; 
+        vertical-align: middle;
+    }
+
+    .name {
+        font-size: 2.5em;
+        font-weight: bold;
+    }
+
+    /* .top-nav {
+        background: gray;
+        color: white;
+    } */
+
+    .nav-pills>li.active>a, .nav-pills>li.active>a:hover, .nav-pills>li.active>a:focus{
+background-color: black;
+color: black ;
+}
+
     </style>
 
     <!-- addtional scripts-->
@@ -40,17 +81,64 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-inverse">
-        <div class="navbar-header">
+    <ul class="nav nav-pills top-nav">
+        <!-- 
+            *** Sample nav bar idea ***
             
-        </div>
-        
-    </nav>
+            <li class="nav-item">
+          <a class="nav-link active" href="#">Active</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle " data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false" data-offset="-50,15">Quicklinks</a>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="#">Code Playground</a>
+            <a class="dropdown-item" href="#">My Blog</a>
+            <a class="dropdown-item" href="#">COVID Homework Page</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Github profile</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Photos</a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">My Adventures</a>
+        </li>
 
-    <div class="jumbotron text-center">
-        <div class="container">
-            
+        <li class="nav-item">
+          <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+        </li>
+     -->
+     <div class="btn-group navbar">
+        <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Action
+        </button>
+        <div class="dropdown-menu">
+          <a class="dropdown-item" href="#">Action</a>
+          <a class="dropdown-item" href="#">Another action</a>
+          <a class="dropdown-item" href="#">Something else here</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">Separated link</a>
         </div>
+      </div>
+
+      </ul>
+
+  <div class="jumbotron text-center intro-jumbo">
+    <div class="container" id="initial-background">
+        <p class="intro">Hello. I'm</p>
+      <p class="intro name">Adam Saenzpardo</h1>
+        <p class="intro">and I might want to work for you</p>
+
+      <a href="#" class="btn btn-primary">Read More</a>
     </div>
+  </div>
 </body>
+
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="js/bootstrap.min.js"></script>
+
+
 </html>
