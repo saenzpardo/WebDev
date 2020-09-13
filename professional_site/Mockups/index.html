@@ -52,9 +52,9 @@
         </header>
         <!-- About-->        
         <!-- adventure section - hidden on page load -->
-        <section class="about-section text-center" style="background-image: linear-gradient(black, gray);"id="about">            
-            <div class="container" id="adventure">
-                <h1 style="font-size: 5em;" class="text-white mx-auto my-4 text-uppercase">Adventures</h1>
+        <section class="about-section text-center" style="background-image: linear-gradient(black, gray);"id="about"> 
+            <div class="container toggleMe" id="adventure">
+                <h1 class="text-white d-inline-flex mx-auto my-4 text-uppercase">Adventures</h1>
                 <div class="row justify-content-between">   
                     <div class="col-sm-3">
                         <img class="img-fluid mb-3 mb-lg-0 rounded myImg hover-shadow" onclick="openModal();currentSlide(1)"
@@ -71,20 +71,22 @@
                     </div>            
             </div>
             <!-- profession section - visible on page load -->
-            <div class="container" id="professional">
-                <h1 style="font-size: 5em;" class="text-white mx-auto my-4 text-uppercase">Ready to join your team</h1>
-                <div class="row justify-content-between">   
+            <div class="container toggleMe" id="professional">
+                <h1 class="text-white mx-auto my-4 text-uppercase">Ready to join your team</h1>
+                <div class="row justify-content-around">   
                     <div class="col-sm-3">
-                        <img class="img-fluid mb-3 mb-lg-0" src="#" alt="" />
-                    </div>        
+                        <img class="img-fluid mb-3 mb-lg-0" src="media/0912201758b.jpg" alt="" />
+                    </div>       
                     <div class="col-sm-3">
-                        <img class="img-fluid mb-3 mb-lg-0" src="#" alt="" />
-                    </div>              
-                    <div class="col-sm-3">
-                        <img class="img-fluid mb-3 mb-lg-0" src="#" alt="" />
+                        <img class="img-fluid mb-3 mb-lg-0" src="media/shrub_tie.jpg" alt="" />
                     </div>
                     </div>                                
-            </div>             
+            </div>
+            <section>
+            <div class="justify-content-start" id="adventureBtn">
+                <button class="btn-outline-primary">Give a click</button>
+            </div>        
+            </section>     
             <div class="container">
                 <div class="row my-xl-5">
                     <div class="col mx-auto">
@@ -97,8 +99,8 @@
                             <li style="padding: 0.5em;" class="">Not just a number in a database</li>
                             </ul>
                         <p class="text-white">
-                            I'm interested in creating something that will benefit the world.  That might end up 
-                            being writing one block of code that contributed to your project, influencing one person that may
+                            I'm interested in creating something that will benefit the world.  That might be 
+                            writing one block of code that contributed to your project, influencing one person that may
                             go on to do great things or just sharing a coffee with someone that needs to work through
                             a problem.  
                         </p>
@@ -108,6 +110,10 @@
                             creating UI/UX isn't my strong suit. If you feel I might be able to contribute to your team while
                             gaining valuable experience, please reach out to me.  
                         </p>
+                        <p class="text-white">
+                            In my free time I enjoy all things outdoors.  My family and I enjoy camping, hiking, 
+                            backpacking, traveling to new places and experiencing everything this world has to offer.
+                        </p>
                     </div>
                 </div>                
             </div>           
@@ -115,37 +121,36 @@
         <section class="projects-section grad1" id="projects">
             <div class="container" id="projects">
                 <p></p>
-                <h1 style="font-size: 5em;" class="text-white mx-auto my-4 text-uppercase">Some of my work</h1>  
-                <div class="row justify-content-between">                                                       
-                    <div class="text-white">
-                       <p> Static HTML Site</p>
-                    </div>                    
-                    <div class="col-sm-3">
-                       <p class="text-white"> Blog</p>
-                    </div>                    
-                    <div class="text-white">
-                       <p> Github Profile</p>
-                    </div>
-                    </div>                
+                <h1 class="text-white mx-auto my-4 text-uppercase">Some of my work</h1> 
                 <div class="row justify-content-between">                    
                     <div class="col-sm-3">
                     <a href="http://saenzpardo.com/homework.html" class="myImg" target=" _blank">  <img class="img-fluid mb-3 mb-lg-0 enlarge" src="media/homeworkk.PNG" 
                         alt="kid's homework page" /></a>  
+                        <p class="text-white-50"> Static HTML Site <br /><br />I created this webpage during the spring of 2020 when COVID-19 shutdown
+                            all schools. I needed a way to keep my children on schedule while encouraging an independent
+                            learning environment. I'm still amazed saenzpardo.com was available! (I'm also a bit sarcastic) 
+                            This page is considered archived and is no longer updated.</p>                        
                     </div>                    
                     <div class="col-sm-3">
-                    <a href="http://saenzpardo.com" class="myImg" target=" _blank">    <img class="img-fluid mb-3 mb-lg-0" src="media/blog_snip.PNG" alt="my Blog" />
+                    <a href="http://saenzpardo.com/blog" class="myImg" target=" _blank">    <img class="img-fluid mb-3 mb-lg-0" src="media/blog_snip.PNG" alt="my Blog" />
                     </a>  
+                    <p class="text-white-50"> Blog<br /><br />I created this blog to experiment with a react.js application
+                    and enjoyed it. Due to my current schedule, I won't be posting as often but it's still an active
+                    page. Check back for my take on learning to program in your late 30s with a family, school and a 
+                    profressional career.</p>                    
                     </div>                    
                     <div class="col-sm-3">
                     <a href="https://github.com/saenzpardo" class="myImg" target=" _blank">    <img class="img-fluid mb-3 mb-lg-0" src="media/github.PNG" alt="Github Profile" />
                     </a>  
+                    <p class="text-white-50"> Github Profile <br /><br />I use git for a lot of things now. I almost like 
+                    it better than OneDrive at times. </p>
+
                     </div>
                     </div>    
                     <p></p>        
                     <p></p>
             </div>
         </section>
-
          <!-- The Modal/Lightbox -->
          <div id="myModal" class="modal">
             <span class="closer cursor" onclick="closeModal()">&times;</span>
@@ -171,19 +176,9 @@
             </div>                  
             </div>
         </div>
-        <!-- end modal -->
-        <!-- <section>
-            <div class="row">
-            <div class="col"><hr></div>
-            <div class="col-auto">***</div>
-            <div class="col"><hr></div>
-            </div>
-        </section> -->
-        
-        
-        <!-- Signup-->
-        <section class="signup-section" id="signup">
-            
+        <!-- end modal -->       
+        <!-- Signup - needs work on the newsletter section -->
+        <section class="signup-section" id="signup">            
             <div class="container">
                 <div class="row">
                     <div class="col-md-10 col-lg-8 mx-auto text-center">
@@ -197,9 +192,8 @@
                     </div>
                 </div>
             </div>
-        </section>
-     
-        <!-- Contact-->
+        </section>     
+        <!-- Contact area-->
         <section class="contact-section bg-black">
             <div class="container">
                 <div class="row">
@@ -253,8 +247,7 @@
         <script src="js/scripts.js"></script>
         
         <!-- Modal Script -->
-        <script>            
-
+        <script>  
             // Open the Modal
             function openModal() {
                 document.getElementById("myModal").style.display = "block";
@@ -296,24 +289,14 @@
                 captionText.innerHTML = dots[slideIndex-1].alt;
             }
         </script>
-
         <!-- My jQuery Scripts -->
         <script>
             $( document ).ready(function() {
-               $("div#professional").hide();
-               
-               
-
-                        
-              
+               $("div#adventure").hide();
+               $("#adventureBtn").click(function() {
+                   $("div.toggleMe").toggle();
+               })
             });
         </script>
-
-
-        <!-- jQuery slim -->
-        <!-- <script src="https://code.jquery.com/jquery-3.5.1.slim.js" integrity="sha256-DrT5NfxfbHvMHux31Lkhxg42LY6of8TaYyK50jnxRnM="
-         crossorigin="anonymous"></script> -->
-
-
     </body>
 </html>

@@ -15,6 +15,10 @@
 personalized CSS styles
 */
 
+#adventureBtn {
+  margin-top: 90px;
+}
+
 .myImg:hover {
   opacity: 0.7;
 }
@@ -87,10 +91,7 @@ p.construction {
     font-size: 1.25rem;
   }
 }
-
-
 /* water ripple effect */
-
 
 /* modals/lightboxes */
 
@@ -179,8 +180,6 @@ p.construction {
 /*
 Bootstrap CSS
 */
-
-
 
 :root {
   --blue: #007bff;
