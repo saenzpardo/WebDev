@@ -25,7 +25,7 @@
         <!-- Navigation-->
         <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
             <div class="container">
-                <a class="navbar-brand js-scroll-trigger" href="#page-top">Code Playground</a>
+                <a class="navbar-brand js-scroll-trigger" href="playground.html">Code Playground</a>
                 <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                     Menu
                     <i class="fas fa-bars"></i>
@@ -40,11 +40,11 @@
             </div>
         </nav>
         <!-- Masthead-->
-        <header class="masthead">
+        <header class="masterhead">
             <div class="container d-flex h-100 align-items-center">
                 <div class="mx-auto text-center">
-                    <h1 class="mx-auto my-0 text-uppercase text">Hello</h1>
-                    <h2 class="text-white-50 mx-auto mt-2 mb-5">My name is ADAM SAENZPARDO.  I might want to work with you, 
+                    <h1 class="mx-auto my-0 text-uppercase">Hello</h1>
+                    <h2  class="mx-auto mt-2 mb-5" style="color: white; opacity: 0.7;">My name is ADAM SAENZPARDO.  I might want to work with you, 
                         but let's get to know each other a little more.</h2>
                     <a class="btn btn-primary js-scroll-trigger" href="#about">Let's get started</a>
                 </div>
@@ -52,7 +52,7 @@
         </header>
         <!-- About-->        
         <!-- adventure section - hidden on page load -->
-        <section class="about-section text-center" id="about">            
+        <section class="about-section text-center" style="background-image: linear-gradient(black, gray);"id="about">            
             <div class="container" id="adventure">
                 <h1 style="font-size: 5em;" class="text-white mx-auto my-4 text-uppercase">Adventures</h1>
                 <div class="row justify-content-between">   
@@ -90,20 +90,29 @@
                     <div class="col mx-auto">
                         <p></p>
                         <h2 class="text-white text-uppercase">Bringing a fresh perspective to your team</h2>                        
-                            <ul style="list-style-type: none;" class="text-white text-uppercase">
+                            <ul style="list-style-type: none;" class="text-white-50 text-uppercase">
                             <li style="padding: 0.5em;" class="">Strong technical background</li>                            
                             <li style="padding: 0.5em;" class="">Involved</li>
                             <li style="padding: 0.5em;" class="">Willing to go the extra mile</li>
-                            <li style="padding: 0.5em;" class="">Not just a number</li>
+                            <li style="padding: 0.5em;" class="">Not just a number in a database</li>
                             </ul>
-                        <p class="text-white-50">
-
+                        <p class="text-white">
+                            I'm interested in creating something that will benefit the world.  That might end up 
+                            being writing one block of code that contributed to your project, influencing one person that may
+                            go on to do great things or just sharing a coffee with someone that needs to work through
+                            a problem.  
+                        </p>
+                        <p class="text-white">
+                            Ultimately I'm interested in coding. I'm not sure what I don't know at this point and would like 
+                            to expand my skillset. I feel I would be better suited to backend work for the simple fact that 
+                            creating UI/UX isn't my strong suit. If you feel I might be able to contribute to your team while
+                            gaining valuable experience, please reach out to me.  
                         </p>
                     </div>
                 </div>                
             </div>           
         <!-- Projects-->         
-        <section class="projects-section" id="projects">
+        <section class="projects-section grad1" id="projects">
             <div class="container" id="projects">
                 <p></p>
                 <h1 style="font-size: 5em;" class="text-white mx-auto my-4 text-uppercase">Some of my work</h1>  
@@ -163,16 +172,24 @@
             </div>
         </div>
         <!-- end modal -->
-
-      
-    
+        <!-- <section>
+            <div class="row">
+            <div class="col"><hr></div>
+            <div class="col-auto">***</div>
+            <div class="col"><hr></div>
+            </div>
+        </section> -->
+        
+        
         <!-- Signup-->
         <section class="signup-section" id="signup">
+            
             <div class="container">
                 <div class="row">
                     <div class="col-md-10 col-lg-8 mx-auto text-center">
                         <i class="far fa-paper-plane fa-2x mb-2 text-white"></i>
                         <h2 class="text-white mb-5">Subscribe to receive updates!</h2>
+                        <p class="text-white">Newsletter under construction</p>
                         <form class="form-inline d-flex">
                             <input class="form-control flex-fill mr-0 mr-sm-2 mb-3 mb-sm-0" id="inputEmail" type="email" placeholder="Enter email address..." />
                             <button class="btn btn-primary mx-auto" type="submit">Subscribe</button>
@@ -225,7 +242,8 @@
             </div>
         </section>
         <!-- Footer-->
-        <footer class="footer bg-black small text-center text-white-50"><div class="container">Copyright © Saenzpardo.com 2020</div></footer>
+        <footer class="footer bg-black small text-center text-white-50"><div class="container">Copyright © Saenzpardo.com 2020</div>
+            <div class="container"><a href="assets/Jesus-Adam-Saenzpardo.pdf" target=" _blank">Resume</a></div></footer>
         <!-- Bootstrap core JS-->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js"></script>
@@ -235,7 +253,8 @@
         <script src="js/scripts.js"></script>
         
         <!-- Modal Script -->
-        <script>
+        <script>            
+
             // Open the Modal
             function openModal() {
                 document.getElementById("myModal").style.display = "block";
