@@ -1,0 +1,302 @@
+<!--
+    Personal portfolio page with concepts and styling borrowed from Graysale bootstrap theme.
+    Author: J. Adam Saenzpardo
+    Date: 8/29/2020 - year of the COVID! 
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Adam Saenzpardo</title>
+        <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v5.13.0/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+    </head>
+    <body id="page-top">
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+            <div class="container">
+                <a class="navbar-brand js-scroll-trigger" href="playground.html">Code Playground</a>
+                <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    Menu
+                    <i class="fas fa-bars"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">About</a></li>
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#projects">Projects</a></li>
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#signup">Contact</a></li>
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="asteroids/index.html">Asteroids</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Masthead-->
+        <header class="masterhead">
+            <div class="container d-flex h-100 align-items-center">
+                <div class="mx-auto text-center">
+                    <h1 class="mx-auto my-0 text-uppercase">Hello</h1>
+                    <h2  class="mx-auto mt-2 mb-5" style="color: white; opacity: 0.7;">My name is ADAM SAENZPARDO.  I might want to work with you, 
+                        but let's get to know each other a little more.</h2>
+                    <a class="btn btn-primary js-scroll-trigger" href="#about">Let's get started</a>
+                </div>
+            </div>
+        </header>
+        <!-- About-->        
+        <!-- adventure section - hidden on page load -->
+        <section class="about-section text-center" style="background-image: linear-gradient(black, gray);"id="about"> 
+            <div class="container toggleMe" id="adventure">
+                <h1 class="text-white d-inline-flex mx-auto my-4 text-uppercase">Adventures</h1>
+                <div class="row justify-content-between">   
+                    <div class="col-sm-3">
+                        <img class="img-fluid mb-3 mb-lg-0 rounded myImg hover-shadow" onclick="openModal();currentSlide(1)"
+                        src="media/yellowstone2.jpg" alt="My Family At Yellowstone" />
+                    </div>        
+                    <div class="col-sm-3">
+                        <img class="img-fluid mb-3 mb-lg-0 rounded myImg hover-shadow" onclick="openModal();currentSlide(2)"
+                        src="media/superior.jpg" alt="superior hiking trail" />
+                    </div>              
+                    <div class="col-sm-3">
+                        <img class="img-fluid mb-3 mb-lg-0 rounded myImg hover-shadow" onclick="openModal();currentSlide(3)"
+                        src="media/puerto_rico.JPG" alt="family in Puerto Rico" />
+                    </div>
+                    </div>            
+            </div>
+            <!-- profession section - visible on page load -->
+            <div class="container toggleMe" id="professional">
+                <h1 class="text-white mx-auto my-4 text-uppercase">Ready to join your team</h1>
+                <div class="row justify-content-around">   
+                    <div class="col-sm-3">
+                        <img class="img-fluid mb-3 mb-lg-0" src="media/0912201758b.jpg" alt="" />
+                    </div>       
+                    <div class="col-sm-3">
+                        <img class="img-fluid mb-3 mb-lg-0" src="media/shrub_tie.jpg" alt="" />
+                    </div>
+                    </div>                                
+            </div>
+            <section>
+            <div class="justify-content-start" id="adventureBtn">
+                <button class="btn-outline-primary">Give a click</button>
+            </div>        
+            </section>     
+            <div class="container">
+                <div class="row my-xl-5">
+                    <div class="col mx-auto">
+                        <p></p>
+                        <h2 class="text-white text-uppercase">Bringing a fresh perspective to your team</h2>                        
+                            <ul style="list-style-type: none;" class="text-white-50 text-uppercase">
+                            <li style="padding: 0.5em;" class="">Strong technical background</li>                            
+                            <li style="padding: 0.5em;" class="">Involved</li>
+                            <li style="padding: 0.5em;" class="">Willing to go the extra mile</li>
+                            <li style="padding: 0.5em;" class="">Not just a number in a database</li>
+                            </ul>
+                        <p class="text-white">
+                            I'm interested in creating something that will benefit the world.  That might be 
+                            writing one block of code that contributed to your project, influencing one person that may
+                            go on to do great things or just sharing a coffee with someone that needs to work through
+                            a problem.  
+                        </p>
+                        <p class="text-white">
+                            Ultimately I'm interested in coding. I'm not sure what I don't know at this point and would like 
+                            to expand my skillset. I feel I would be better suited to backend work for the simple fact that 
+                            creating UI/UX isn't my strong suit. If you feel I might be able to contribute to your team while
+                            gaining valuable experience, please reach out to me.  
+                        </p>
+                        <p class="text-white">
+                            In my free time I enjoy all things outdoors.  My family and I enjoy camping, hiking, 
+                            backpacking, traveling to new places and experiencing everything this world has to offer.
+                        </p>
+                    </div>
+                </div>                
+            </div>           
+        <!-- Projects-->         
+        <section class="projects-section grad1" id="projects">
+            <div class="container" id="projects">
+                <p></p>
+                <h1 class="text-white mx-auto my-4 text-uppercase">Some of my work</h1> 
+                <div class="row justify-content-between">                    
+                    <div class="col-sm-3">
+                    <a href="http://saenzpardo.com/homework.html" class="myImg" target=" _blank">  <img class="img-fluid mb-3 mb-lg-0 enlarge" src="media/homeworkk.PNG" 
+                        alt="kid's homework page" /></a>  
+                        <p class="text-white-50"> Static HTML Site <br /><br />I created this webpage during the spring of 2020 when COVID-19 shutdown
+                            all schools. I needed a way to keep my children on schedule while encouraging an independent
+                            learning environment. I'm still amazed saenzpardo.com was available! (I'm also a bit sarcastic) 
+                            This page is considered archived and is no longer updated.</p>                        
+                    </div>                    
+                    <div class="col-sm-3">
+                    <a href="http://saenzpardo.com/blog" class="myImg" target=" _blank">    <img class="img-fluid mb-3 mb-lg-0" src="media/blog_snip.PNG" alt="my Blog" />
+                    </a>  
+                    <p class="text-white-50"> Blog<br /><br />I created this blog to experiment with a react.js application
+                    and enjoyed it. Due to my current schedule, I won't be posting as often but it's still an active
+                    page. Check back for my take on learning to program in your late 30s with a family, school and a 
+                    profressional career.</p>                    
+                    </div>                    
+                    <div class="col-sm-3">
+                    <a href="https://github.com/saenzpardo" class="myImg" target=" _blank">    <img class="img-fluid mb-3 mb-lg-0" src="media/github.PNG" alt="Github Profile" />
+                    </a>  
+                    <p class="text-white-50"> Github Profile <br /><br />I use git for a lot of things now. I almost like 
+                    it better than OneDrive at times. </p>
+                    </div>
+                    </div>    
+                    <p></p>        
+                    <p></p>
+            </div>
+        </section>
+         <!-- The Modal/Lightbox -->
+         <div id="myModal" class="modal">
+            <span class="closer cursor" onclick="closeModal()">&times;</span>
+            <div class="modal-content">        
+            <div class="mySlides">
+                <div class="numbertext">1 / 4</div>
+                <img src="media/yellowstone2.jpg" style="width: 100%">
+            </div>        
+            <div class="mySlides">
+                <div class="numbertext">2 / 4</div>
+                <img src="media/superior.jpg" style="width: 100%">
+            </div>        
+            <div class="mySlides">
+                <div class="numbertext">3 / 4</div>
+                <img src="media/puerto_rico.JPG" style="width: 100%">
+            </div>            
+            <!-- Next/previous controls -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>        
+            <!-- Caption text -->
+            <div class="caption-container">
+                <p id="caption"></p>
+            </div>                  
+            </div>
+        </div>
+        <!-- end modal -->       
+        <!-- Signup - needs work on the newsletter section -->
+        <section class="signup-section" id="signup">            
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-10 col-lg-8 mx-auto text-center">
+                        <i class="far fa-paper-plane fa-2x mb-2 text-white"></i>
+                        <h2 class="text-white mb-5">Subscribe to receive updates!</h2>
+                        <p class="text-white">Newsletter under construction</p>
+                        <form class="form-inline d-flex">
+                            <input class="form-control flex-fill mr-0 mr-sm-2 mb-3 mb-sm-0" id="inputEmail" type="email" placeholder="Enter email address..." />
+                            <button class="btn btn-primary mx-auto" type="submit">Subscribe</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>     
+        <!-- Contact area-->
+        <section class="contact-section bg-black">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4 mb-3 mb-md-0">
+                        <div class="card py-4 h-100">
+                            <div class="card-body text-center">
+                                <i class="fas fa-map-marked-alt text-primary mb-2"></i>
+                                <h4 class="text-uppercase m-0">Address</h4>
+                                <hr class="my-4" />
+                                <div class="small text-black-50">Hastings, NE</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3 mb-md-0">
+                        <div class="card py-4 h-100">
+                            <div class="card-body text-center">
+                                <i class="fas fa-envelope text-primary mb-2"></i>
+                                <h4 class="text-uppercase m-0">Email</h4>
+                                <hr class="my-4" />
+                                <div class="small text-black-50"><a href="mailto:saenzpardoa@gmail.com">saenzpardoa@gmail.com</a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3 mb-md-0">
+                        <div class="card py-4 h-100">
+                            <div class="card-body text-center">
+                                <i class="fas fa-mobile-alt text-primary mb-2"></i>
+                                <h4 class="text-uppercase m-0">Phone</h4>
+                                <hr class="my-4" />
+                                <div class="small text-black-50">+1 (402) 834-3765</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="social d-flex justify-content-center">
+                    <a class="mx-2" target="_blank" href="https://twitter.com/Saenzpardo4"><i class="fab fa-twitter"></i></a>
+                    <a class="mx-2" target="_blank" href="https://www.facebook.com/adam.saenzpardo"><i class="fab fa-facebook-f"></i></a>
+                    <a class="mx-2" target="_blank" href="https://www.linkedin.com/in/adam-saenzpardo-7009721b0/"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+        </section>
+        <!-- Footer-->
+        <footer class="footer bg-black small text-center text-white-50"><div class="container">Copyright &copy; Saenzpardo.com 2020</div>
+            <div class="container"><a href="assets/Jesus-Adam-Saenzpardo.pdf" target=" _blank">Resume</a></div></footer>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js"></script>
+        <!-- Third party plugin JS-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+        
+        <!-- Modal Script -->
+        <script>  
+            // Open the Modal
+            function openModal() {
+                document.getElementById("myModal").style.display = "block";
+            }
+
+            // Close the Modal
+            function closeModal() {
+                document.getElementById("myModal").style.display = "none";
+            }
+
+            var slideIndex = 1;
+            showSlides(slideIndex);
+
+            // Next/previous controls
+            function plusSlides(n) {
+                showSlides(slideIndex += n);
+            }
+
+            // Thumbnail image controls
+            function currentSlide(n) {
+                showSlides(slideIndex = n);
+            }
+
+            function showSlides(n) {
+                var i;
+                var slides = document.getElementsByClassName("mySlides");
+                var dots = document.getElementsByClassName("demo");
+                var captionText = document.getElementById("caption");
+                if (n > slides.length) {slideIndex = 1}
+                if (n < 1) {slideIndex = slides.length}
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                }
+                for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                }
+                slides[slideIndex-1].style.display = "block";
+                dots[slideIndex-1].className += " active";
+                captionText.innerHTML = dots[slideIndex-1].alt;
+            }
+        </script>
+        <!-- My jQuery Scripts -->
+        <script>
+            $( document ).ready(function() {
+               $("div#adventure").hide();
+               $("#adventureBtn").click(function() {
+                   $("div.toggleMe").toggle();
+               })
+            });
+        </script>
+    </body>
+</html>

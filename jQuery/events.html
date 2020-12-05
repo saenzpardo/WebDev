@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>jQuery Crash Course | Events</title>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <style>
+        body {
+            font-size: 17px;
+            font-family: Arial, Helvetica, sans-serif;
+            background: #f4f4f4;
+            color: gray;
+            line-height: 1.5em;
+        }
+
+        header {
+            background: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            border-bottom: 4px #000 solid;
+            margin-bottom: 10px;
+        }
+
+        container {
+            width: 90%;
+            margin: auto;
+            padding: 10px;          
+        }
+
+        p {
+            color: blue;
+        }
+
+        div > h1 {
+            color: green;
+        }
+
+        button#btn3 {
+            position: relative;
+            z-index: 2;   
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>jQuery Crash Course | Events</h1>
+    </header>   
+    <div id="container">
+       <h3>Mouse Events</h3>
+       <button id="btn1" class="btnClass">Button 1</button>
+       <button id="btn2">Button 2</buttn>
+       <button id="btn3">Click to contact my current employer</button>
+       <p class="para1">Lorem ipsum dolor sit, 
+           amet consectetur adipisicing elit. Perferendis 
+           id debitis sed unde error numquam earum repellendus
+            amet eveniet incidunt voluptas quasi esse 
+            necessitatibus enim accusamus ipsam, vero 
+            dolorum ducimus.</p>
+        <h1 id="coords"></h1>
+        <hr>
+        <form id="form">
+            <label>Name</label><br />
+            <input type="text" id="name" name="name">
+            <br />
+            <label>Email</label><br />
+            <input type="email" id="email" name="email">
+            <br />
+            <label>Gender</label><br />
+            <select id="gender" name="gender">
+                <option value="male">Male</option>
+                <option value="female">Female</output>
+            </select>
+            <br />            
+            <input type="submit" value="submit">
+        </form>
+    </div>
+
+    <script>
+        $(document).ready(function() {
+
+            // shorthand event call            
+            // $('#btn1').click(function(){
+            //     alert('Button Clicked!');
+            // });
+
+            // utilizes the 'on' method and then the 'click' event
+            // $('#btn1').on('click', function() {
+            //     alert('Button Clicked!');
+            // });
+
+            // utilize click event to hide para1 class
+            // $('#btn1').on('click', function(){
+            //     $('.para1').hide();
+            // });
+            
+            // utilize click event to show para1 class
+            // $('#btn2').on('click', function(){
+            //     $('.para1').show();
+            // });
+
+            // utilize toggle method
+            // $('#btn1').on('click', function(){
+            //     $('.para1').toggle();
+            // });
+
+            // toggle with double click
+            // $('#btn1').dblclick(function(){
+            //     $('.para1').toggle();
+            // });
+            
+            // toggle with hover
+            // $('#btn1').hover(function(){
+            //     $('.para1').toggle();
+            // });
+            
+            // above hover method utilizes the mouseenter and 
+            // mouse leave events as written below
+            // $('#btn1').on('mouseenter', function(){
+            //     $('.para1').toggle();
+            // });
+            // $('#btn1').on('mouseleave', function(){
+            //     $('.para1').toggle();
+            // });
+
+            // uses the mouse move event to toggle
+            // $('#btn1').on('mousemove', function(){
+            //     $('.para1').toggle();
+            // });
+
+            // hides para1 when mouse button is clicked
+            // $('#btn1').on('mousedown', function(){
+            //     $('.para1').toggle();
+            // });
+
+            // shows para1 when mouse button is released
+            // $('#btn1').on('mouseup', function(){
+            //     $('.para1').toggle();
+            // });
+
+            // find click events information
+            // $('#btn1').click(function(e){
+            //     console.log(e.currentTarget.id);
+            //     alert(e.currentTarget.innerHTML);
+            //     alert(e.currentTarget.outerHTML);
+            //     alert(e.currentTarget.className);
+            // });
+
+            // method to display mouse coordinates
+            $(document).on('mousemove', function(e){
+                $('#coords').html('Coords: Y: ' + e.clientY + 'X: ' + e.clientX);
+            });   
+
+            
+            // awesome function to make mouse button move away from cursor
+            // declare variable
+            var runner = $('#btn3');      
+
+            // function to get random screen coords
+            function runAway() {
+                var randX = Math.floor(Math.random() * (window.innerWidth - 100));
+                var randY = Math.floor(Math.random() * (window.innerHeight - 100));
+                console.log([randX, randY]);
+                // set coords to runner 
+                runner.stop().animate({"left": randX + "px", "top": randY + "px"});
+            } // end runAway function           
+            $(document).ready(function() { // jQuery block                
+                runner.on('mouseenter', runAway); // call runAway function at mouse enter
+                runner.on('click', function(){ // display alert box when actually clicked
+                    alert('Fine...402-460-2696');
+                });                
+            }); // end jQuery statement
+
+            // changes background color of the input you click into
+            // utilizing the focus method
+            $('input').focus(function(){
+                //alert('Focus');
+                $(this).css('background', 'pink');
+            });
+            // changes background color of input you click out of
+            // utilizing the blur method (opposite of focus)
+            $('input').blur(function(){
+                //alert('Focus');
+                $(this).css('background', 'white');
+            });
+
+            // logs keystrokes into input fields
+            // $('input').keyup(function(e){
+            //     console.log(e.target.value);
+            // })
+            
+            // alert box when value in select box is changed
+            $('select#gender').change(function(e){
+                alert('Changed to ' + e.target.value);
+            });
+
+            // grab form input information and log it to the console
+            $('#form').submit(function(e){
+                e.preventDefault();
+                var name= $('input#name').val();
+                console.log(name);
+            });
+        });
+    </script>
+</body>
+</html>
