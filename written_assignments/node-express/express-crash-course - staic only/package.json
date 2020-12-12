@@ -1,0 +1,21 @@
+{
+  "name": "express-crash-course",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "_comment1_": "add start script and nodemon scripts for build",
+    "start": "node index",
+    "dev": "nodemon index",
+    "_comment2_": "npm run dev to start development server"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.6"
+  }
+}
